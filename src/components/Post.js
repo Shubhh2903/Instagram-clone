@@ -72,7 +72,7 @@ function Post() {
 
 export default Post;
 const Text = styled.div`
-  font-size: 10px;
+  font-size: 9px;
   margin-left: -11px;
   width:auto;
 `;
