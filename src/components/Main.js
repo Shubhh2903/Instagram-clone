@@ -39,7 +39,6 @@ function Main() {
           <Time>10 minutes ago</Time>
         </CommnetSection>
       </Container>
-      
       <Container>
         <Name>
           <StoryWrapper>
@@ -71,7 +70,6 @@ function Main() {
           <Time>10 minutes ago</Time>
         </CommnetSection>
       </Container>
-      
       <Container>
         <Name>
           <StoryWrapper>
@@ -102,7 +100,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -132,7 +131,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -162,7 +162,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -192,7 +193,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -222,7 +224,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -252,7 +255,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -282,7 +286,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -312,7 +317,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -342,7 +348,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -372,7 +379,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -402,7 +410,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -432,7 +441,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>{" "}
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -462,7 +472,8 @@ function Main() {
           <ViewAll>View all 73 comments</ViewAll>
           <Time>10 minutes ago</Time>
         </CommnetSection>
-      </Container>  <Container>
+      </Container>
+      <Container>
         <Name>
           <StoryWrapper>
             <Back>
@@ -575,11 +586,12 @@ const LikeSection = styled.div`
 `;
 const Photo = styled.div`
   background-image: url(${pp});
-  background-size: cover;
+  background-size: contain;
+  height: 100%;
   width: 100%;
-  background-repeat: no-repeat;
-  height: 800px;
+  padding-bottom: 100%;
   background-position: center;
+  background-repeat: no-repeat;
 `;
 const Span = styled.div`
   display: inline-block;
@@ -628,11 +640,16 @@ const Name = styled.div`
   padding: 14px 4px 14px 16px;
 `;
 const Container = styled.div`
-  width: 100%;
   background-color: #ffffff;
   height: auto;
   margin-top: 25px;
   border: 1px solid #dbdbdb;
   margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 10px;
+ 
+  @media (max-width: 1000px) {
+    width: 110%;
+  }
 `;

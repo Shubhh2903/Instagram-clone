@@ -35,6 +35,9 @@ const InputWrapper = styled.div`
   position: relative;
   padding-left: 10px;
   background-color: white;
+  @media(max-width:1000px) {
+    display: none;
+  }
 `;
 const PP = styled.div`
   background-image: url(${pp});
@@ -64,6 +67,7 @@ const Navigation = styled.div`
   width: 24px;
   margin-left: 22px;
   cursor: pointer;
+
 `;
 const Post = styled.div`
   background-image: url(${post});
@@ -122,27 +126,35 @@ const Nav = styled.div`
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-  justify-content: space-around;
   margin-top: 15px;
+  width: 60%;
+  padding-bottom: 10px;
+  justify-content: space-between;
   background-color: white;
+  @media(max-width:1000px){
+   justify-content: space-between;
+   width: max-content;
+   padding-bottom: 6px;
+  }
 `;
 const MainWrapper = styled.div`
   background-color: white;
   display: flex;
   border-bottom: 1px solid #dbdbdb;
-  height: 60px;
   align-items: center;
   width: 100%;
   z-index: 3;
   position: fixed;
   box-sizing: border-box;
+
+  @media(max-width:1000px){
+    justify-content: center;
+  }
 `;
 const LogoWrapper = styled.div`
   background-image: url(${logo});
   background-size: contain;
   background-repeat: no-repeat;
-  height: 37px;
   width: 100px;
   background-color: white;
 `;

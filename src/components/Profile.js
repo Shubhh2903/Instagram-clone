@@ -134,6 +134,7 @@ const Follow = styled.div`
   font-weight: bold;
   cursor: pointer;
   text-align: right;
+  flex-grow: 1;
 `;
 const Suggested = styled.div`
   display: flex;
@@ -142,7 +143,7 @@ const Suggested = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width:60%;
+  width:70%;
 `;
 const ProfilePP = styled.div`
   background-image: url(${pp});
@@ -152,6 +153,7 @@ const ProfilePP = styled.div`
   background-position: center;
   height: 40px;
   width: 40px;
+  flex-shrink: 0;
 `;
 const People = styled.div`
   display: flex;
@@ -163,6 +165,7 @@ const People = styled.div`
 const See = styled.div`
   font-size: 12px;
   cursor: pointer;
+
 `;
 const Suggestion = styled.div`
   color: #8e8e8e;
@@ -176,6 +179,7 @@ const Switch = styled.div`
   padding-left: 19px;
   cursor: pointer;
   text-align: right;
+  flex-grow: 0;
 `;
 const SuggestionWrapper = styled.div`
   display: flex;
@@ -222,5 +226,8 @@ const Content = styled.div`
   margin-top: 100px;
   position: fixed;
   right: 0;
-  float: right;
+  width: 40%;
+  @media(max-width: 1000px){
+    display: none;
+  }
 `;

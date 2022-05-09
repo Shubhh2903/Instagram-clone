@@ -1,4 +1,3 @@
-import styled from "styled-components/macro";
 import Header from "../src/components/Header";
 import Post from "./components/Post";
 

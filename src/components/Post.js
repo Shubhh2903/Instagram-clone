@@ -8,12 +8,37 @@ import Profile from "./Profile";
 import Main from "./Main";
 function Post() {
   const settings = {
-    arrows: true,
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 5,
-    swipeToSlide: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <Wrapper>
@@ -60,10 +85,8 @@ function Post() {
             <Text>shubham_lilawala</Text>
           </ImageWrapper>
         </Slider>
-        <Main/>
+        <Main />
       </Story>
-     
-
       <Profile />
     </Wrapper>
   );
@@ -73,7 +96,9 @@ export default Post;
 const Text = styled.div`
   font-size: 12px;
   margin-left: -11px;
-  width: auto;
+  @media (max-width:480px){
+    font-size: 10px;
+  }
 `;
 const StoryPhoto = styled.img`
   height: 66px;
@@ -81,9 +106,6 @@ const StoryPhoto = styled.img`
   border: 2px solid #d02f68;
   border-radius: 50%;
   cursor: pointer;
-`;
-const H3 = styled.h3`
-  margin-top: 25px;
 `;
 const Wrapper = styled.div`
   margin-left: auto;
@@ -99,7 +121,10 @@ const Story = styled.div`
   height: 100px;
   width: 55%;
   align-items: center;
-  
+  @media (max-width: 1000px) {
+    width: 110%;
+  }
+
 `;
 
 const ImageWrapper = styled.div`
