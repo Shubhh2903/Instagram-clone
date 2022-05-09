@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import logo from "../images/logo.png";
 import searchIcon from "../images/search-icon.png";
 import home from "../images/icon/home-icon.png";
@@ -17,7 +17,6 @@ function Header() {
           <SerachIconWrapper />
           <Input type="text" placeholder="Search" />
         </InputWrapper>
-
         <Icon>
           <Home />
           <Message />
@@ -35,6 +34,7 @@ export default Header;
 const InputWrapper = styled.div`
   position: relative;
   padding-left: 10px;
+  background-color: white;
 `;
 const PP = styled.div`
   background-image: url(${pp});
@@ -45,6 +45,7 @@ const PP = styled.div`
   margin-left: 22px;
   border-radius: 50%;
   background-position: center;
+  cursor: pointer;
 `;
 const Like = styled.div`
   background-image: url(${like});
@@ -53,6 +54,7 @@ const Like = styled.div`
   height: 24px;
   width: 24px;
   margin-left: 22px;
+  cursor: pointer;
 `;
 const Navigation = styled.div`
   background-image: url(${navigation});
@@ -61,6 +63,7 @@ const Navigation = styled.div`
   height: 24px;
   width: 24px;
   margin-left: 22px;
+  cursor: pointer;
 `;
 const Post = styled.div`
   background-image: url(${post});
@@ -69,6 +72,7 @@ const Post = styled.div`
   height: 24px;
   width: 24px;
   margin-left: 22px;
+  cursor: pointer;
 `;
 const Message = styled.div`
   background-image: url(${message});
@@ -77,6 +81,7 @@ const Message = styled.div`
   height: 24px;
   width: 24px;
   margin-left: 22px;
+  cursor: pointer;
 `;
 const Home = styled.div`
   background-image: url(${home});
@@ -84,9 +89,11 @@ const Home = styled.div`
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
+  cursor: pointer;
 `;
 const Icon = styled.div`
   display: flex;
+  background-color: white;
 `;
 const SerachIconWrapper = styled.div`
   background-image: url(${searchIcon});
@@ -95,8 +102,9 @@ const SerachIconWrapper = styled.div`
   position: absolute;
   width: 17px;
   height: 20px;
-  top:10px;
-  left:15px;
+  top: 10px;
+  left: 15px;
+  background-color: #efefef;
 `;
 const Input = styled.input`
   background-color: #efefef;
@@ -117,17 +125,24 @@ const Nav = styled.div`
   width: 60%;
   justify-content: space-around;
   margin-top: 15px;
+  background-color: white;
 `;
 const MainWrapper = styled.div`
   background-color: white;
   display: flex;
   border-bottom: 1px solid #dbdbdb;
   height: 60px;
+  align-items: center;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  box-sizing: border-box;
 `;
 const LogoWrapper = styled.div`
   background-image: url(${logo});
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100px;
+  height: 37px;
   width: 100px;
+  background-color: white;
 `;
