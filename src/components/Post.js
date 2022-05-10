@@ -17,10 +17,9 @@ function Post() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 5,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -34,7 +33,7 @@ function Post() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 5,
           slidesToScroll: 1,
         },
       },
@@ -85,7 +84,7 @@ function Post() {
             <Text>shubham_lilawala</Text>
           </ImageWrapper>
         </Slider>
-        <Main />
+       <Main/>
       </Story>
       <Profile />
     </Wrapper>
@@ -96,7 +95,7 @@ export default Post;
 const Text = styled.div`
   font-size: 12px;
   margin-left: -11px;
-  @media (max-width:480px){
+  @media (max-width: 480px) {
     font-size: 10px;
   }
 `;
@@ -113,6 +112,13 @@ const Wrapper = styled.div`
   width: 60%;
   display: flex;
   padding-top: 65px;
+  @media (max-width: 1024px) {
+    width: auto;
+    justify-content: center;
+    border: none;
+    padding-left: 25px;
+    padding-right: 65px;
+  }
 `;
 const Story = styled.div`
   background-color: white;
@@ -121,10 +127,9 @@ const Story = styled.div`
   height: 100px;
   width: 55%;
   align-items: center;
-  @media (max-width: 1000px) {
-    width: 110%;
+  @media (max-width: 1024px) {
+    width:110%;
   }
-
 `;
 
 const ImageWrapper = styled.div`
