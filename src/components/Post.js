@@ -119,6 +119,7 @@ const Wrapper = styled.div`
     padding-left: 25px;
     padding-right: 65px;
   }
+  gap:100px;
 `;
 const Story = styled.div`
   background-color: white;
