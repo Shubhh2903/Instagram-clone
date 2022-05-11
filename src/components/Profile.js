@@ -143,7 +143,7 @@ const Suggested = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width:100%;
+  width:70%;
 `;
 const ProfilePP = styled.div`
   background-image: url(${pp});
@@ -224,11 +224,12 @@ const Story = styled.div`
 `;
 const Content = styled.div`
   margin-top: 100px;
+  margin-left: auto;
   right: 0;
-  position: relative;
-  width: 40%;
+  position: fixed;
+  width: 45%;
   @media(max-width: 1000px){
     display: none;
   }
-
+  
 `;

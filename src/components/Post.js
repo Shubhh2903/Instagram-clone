@@ -25,7 +25,7 @@ function Post() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -33,7 +33,7 @@ function Post() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
@@ -119,7 +119,6 @@ const Wrapper = styled.div`
     padding-left: 25px;
     padding-right: 65px;
   }
-  gap:100px;
 `;
 const Story = styled.div`
   background-color: white;
@@ -129,7 +128,8 @@ const Story = styled.div`
   width: 55%;
   align-items: center;
   @media (max-width: 1024px) {
-    width:110%;
+    width:100%;
+    margin-left: 40px;
   }
 `;
 

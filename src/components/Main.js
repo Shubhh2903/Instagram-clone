@@ -641,15 +641,14 @@ const Name = styled.div`
 `;
 const Container = styled.div`
   background-color: #ffffff;
-  height: auto;
   margin-top: 25px;
   border: 1px solid #dbdbdb;
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
- 
+  width: 100%;
   @media (max-width: 1000px) {
-    width: 110%;
+    width: 100%;
   }
 `;
